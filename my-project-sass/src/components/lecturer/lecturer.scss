@@ -1,0 +1,83 @@
+@import "../mixin.scss";
+
+.lecturer {
+  margin: 5% 0;
+  text-align: center;
+
+  .title {
+    color: #fff;
+    padding: 15px 0;
+    font-size: 24px;
+    @include slogon;
+    @media screen and (max-width:768px) {
+      font-size: 18px;
+    }
+
+    &::before {
+      @include arrow;
+    }
+  }
+
+  p {
+    @include main_font_color;
+    font-size: 32px;
+    margin-top: 50px;
+    font-family: sans-serif;
+    @media screen and (max-width:768px) {
+      font-size: 24px;
+    }
+  }
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 50%;
+  margin: 0 auto;
+  @media screen and (max-width:768px) {
+    width: 100%;
+  }
+
+  p {
+    text-align: center;
+    color: #000;
+    font-size: 18px;
+    margin: 0;
+    @media screen and (max-width:540px) {
+      font-size: 16px;
+    }
+  }
+}
+
+img {
+  margin-top: 50px;
+  width: 100%;
+}
+
+.row_box {
+  width: 50%;
+  @media screen and (max-width:540px) {
+    width: 95%;
+  }
+}
+
+h1 {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 48px;
+  @include main_font_color;
+  @media screen and (max-width:768px) {
+    font-size: 36px;
+  }
+}
+
+.lecturer_button {
+  background-color: #000;
+  color: #fff;
+  font-size: 18px;
+  font-family: sans-serif;
+  width: 150px;
+  margin: 50px auto 0;
+  padding: 10px;
+}
