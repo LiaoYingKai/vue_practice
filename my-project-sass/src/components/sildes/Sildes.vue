@@ -29,7 +29,7 @@ export default {
     images() {
       return this.imageData.map(url => {
         return {
-          src: require("../../" + url),
+          src: require(`../../${url}`),
           text: "test"
         }
       })
